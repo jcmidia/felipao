@@ -21,7 +21,8 @@ function preload() {
     game.load.image('ground', 'assets/platform.jpg');
     game.load.image('fireworks', 'assets/fireworks.png');
     game.load.spritesheet('felipao', 'assets/sprite-felipao-s.png', 153, 220);
-    game.load.audio('boden', ['assets/hahaha.mp3']);
+    game.load.audio('risada', ['assets/hahaha.mp3']);
+    game.load.audio('ondas', ['assets/beach.mp3']);
 
 }
 
@@ -30,7 +31,8 @@ var platforms;
 var cursors;
 var title;
 var score=0;
-var music;
+var risada;
+var soundtrak;
 
 function create() {
 
@@ -75,6 +77,8 @@ function create() {
     title = game.add.text(16, 16, 'Felipão - Uma aventura no México', { fontSize: '32px', fill: '#fff' });
 
     cursors = game.input.keyboard.createCursorKeys();
+
+    soundtrak = game.sound.play('ondas', 0.5, true);
 }
 
 function update() {
@@ -119,7 +123,7 @@ function collect (player, firework) {
 
     if (score==3) {
         var scoreText = game.add.text(300, 200, 'HAHAHAHAHAHAHA', { fontSize: '32px', fill: '#fff' });
-        music = game.sound.play('boden');
+        risada = game.sound.play('risada');
     };
 
 }
