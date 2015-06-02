@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # php-getting-started
 
 A barebones PHP app that makes use of the [Silex](http://silex.sensiolabs.org/) web framework, which can easily be deployed to Heroku.
@@ -30,3 +31,6 @@ $ heroku open
 For more information about using PHP on Heroku, see these Dev Center articles:
 
 - [PHP on Heroku](https://devcenter.heroku.com/categories/php)
+=======
+# felipao
+>>>>>>> 7e3739c617b427c1c368122e3ab166b34d26fe56
